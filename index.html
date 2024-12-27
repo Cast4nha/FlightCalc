@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Passagens Aéreas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Passagens Aéreas</h1>
+        <div class="calculator">
+            <div class="input-group">
+                <label for="valorCompanhia">Valor da Companhia Aérea:</label>
+                <input type="text" id="valorCompanhia" class="money" placeholder="R$ 0,00">
+            </div>
+            
+            <div class="input-group">
+                <label for="quantidadePontos">Quantidade de Pontos:</label>
+                <input type="number" id="quantidadePontos">
+            </div>
+            
+            <div class="input-group">
+                <label for="valorPontos">Valor dos Pontos:</label>
+                <input type="text" id="valorPontos" class="money" placeholder="R$ 0,00">
+            </div>
+            
+            <div class="input-group">
+                <label for="taxaEmbarque">Taxa de Embarque:</label>
+                <input type="text" id="taxaEmbarque" class="money" placeholder="R$ 0,00">
+            </div>
+
+            <button onclick="calcular()">Calcular</button>
+
+            <div class="results">
+                <div class="result-group">
+                    <label>Valor Mínimo (R$):</label>
+                    <span id="valorMinimo">0.00</span>
+                </div>
+
+                <div class="result-group">
+                    <label>Valor Médio Possível (R$):</label>
+                    <span id="valorMedio">0.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
